@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import express, { Express, Request, Response } from 'express';
 import createError from 'http-errors';
-import apiRouter from './routes/api/index';
+import apiRouter from './routes/api';
 
 dotenv.config();
 
