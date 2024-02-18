@@ -19,7 +19,7 @@
       "type": "shell",
       "command": "echo prepare app to debug",
       "dependsOrder": "sequence",
-      "dependsOn": ["npm: build - app"]
+      "dependsOn": ["clean app", "npm: build - app"]
     },
     {
       "label": "clean app after debug",
