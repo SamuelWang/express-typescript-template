@@ -15,8 +15,8 @@ app.get('/', (_req: Request, res: Response) => {
   res.send('express-typescript-template');
 });
 
-app.use((req: Request, res: Response, next) => {
-  next(createError(404));
+app.use((_req: Request, res: Response) => {
+  res.status(404).send("Sorry can't find that!");
 });
 
 app.listen(port, hostname, () => {
